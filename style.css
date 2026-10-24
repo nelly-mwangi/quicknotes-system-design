@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f4f6f8;
+}
+
+header,
+footer {
+  padding: 1.25rem;
+  text-align: center;
+  background: #243b53;
+  color: white;
+}
+
+main {
+  width: min(900px, 92%);
+  margin: 2rem auto;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+}
+
+button {
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  background: #1769aa;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #0f4c81;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+#status {
+  padding: 0.75rem;
+  border-radius: 5px;
+  background: #eef2f6;
+}
+
+#status.success {
+  color: #176534;
+  background: #e4f5e9;
+}
+
+#status.error {
+  color: #a61b1b;
+  background: #fde8e8;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #aab4be;
+  border-radius: 5px;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#notes-list {
+  padding-left: 1.5rem;
+}
+
+.note-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #d9e0e7;
+  border-radius: 7px;
+  overflow-wrap: anywhere;
+}
+
+.note-item h3 {
+  margin-top: 0;
+}
+
+.delete-btn {
+  background: #b42318;
+}
+
+.delete-btn:hover:not(:disabled) {
+  background: #801b13;
+}
+
+.empty-state {
+  color: #5b6573;
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 95%;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
